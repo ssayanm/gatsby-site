@@ -1,8 +1,9 @@
 import React from "react"
+import Layout from "../components/layout"
 
 const ContactPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>Contact</h1>
       <p>Here is my contact below</p>
       <p>
@@ -11,7 +12,7 @@ const ContactPage = () => {
           Click Here
         </a>
       </p>
-    </div>
+    </Layout>
   )
 }
 
