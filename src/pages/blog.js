@@ -24,12 +24,17 @@ const BlogPage = () => {
     <Layout>
       <h1>Blog</h1>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          {node.frontmatter.title} - {node.frontmatter.date}
-          <p>{node.excerpt}</p>
-        </div>
-      ))}
+      <ol>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <li>
+              <h2>{node.frontmatter.title}</h2>
+              <p>{node.frontmatter.date}</p>
+              <p>{node.excerpt}</p>
+            </li>
+          </div>
+        ))}
+      </ol>
     </Layout>
   )
 }
