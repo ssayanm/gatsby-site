@@ -1,11 +1,13 @@
 ---
-title: "Why I Love GReact"
-date: "2020-02-02"
+title: "Why I Love Gatsby"
+date: "2020-01-01"
 ---
 
-### React is the best.
+![gatsby](./gat.jpg)
 
-I scream, you scream, we all scream, because there's no more ice cream. No one's rhyming about spinach.
+### Gatsby is the best.
+
+I scream, you scream, we all scream, because there's no more ice-cream. No one's rhyming about spinach.
 
 Here is a description of this heavenly nectar from wikipedia on [ice cream](https://en.wikipedia.org/wiki/Ice_cream):
 
