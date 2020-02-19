@@ -5,7 +5,7 @@ date: "2020-01-01"
 
 ### Gatsby is the best.
 
-I scream, you scream, we all scream, because there's no more ice cream. No one's rhyming about spinach.
+I scream, you scream, we all scream, because there's no more ice-cream. No one's rhyming about spinach.
 
 Here is a description of this heavenly nectar from wikipedia on [ice cream](https://en.wikipedia.org/wiki/Ice_cream):
 
