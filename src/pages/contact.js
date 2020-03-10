@@ -18,7 +18,14 @@ const ContactPage = () => {
           Click Here
         </a>
       </p>
-      <form name="contact" method="POST" data-netlify="true" netlify>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify
+        netlify-honeypot="bot-field"
+        action="/src/pages/about.js"
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" />
