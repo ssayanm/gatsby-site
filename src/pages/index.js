@@ -5,15 +5,9 @@ import Head from "../components/head"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
 import headerStyles from "./styles.module.scss"
+import "./slider.animations.scss"
 
 const content = [
-  {
-    title: "Vulputate Mollis Ultricies Fermentum Parturient",
-    description:
-      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-    button: "Read More",
-    image: "https://i.imgur.com/ZXBtVw7.jpg",
-  },
   {
     title: "Tortor Dapibus Commodo Aenean Quam",
     description:
@@ -21,6 +15,14 @@ const content = [
     button: "Discover",
     image: "https://i.imgur.com/DCdBXcq.jpg",
   },
+  {
+    title: "Vulputate Mollis Ultricies Fermentum Parturient",
+    description:
+      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
+    button: "Read More",
+    image: "https://i.imgur.com/ZXBtVw7.jpg",
+  },
+
   {
     title: "Phasellus volutpat metus",
     description:
@@ -35,7 +37,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
 
-      <Slider className={headerStyles.swrapper}>
+      <Slider className={headerStyles.swrapper} autoplay={3000}>
         {content.map((item, index) => (
           <div
             key={index}
