@@ -4,8 +4,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
-import headerStyles from "./styles.module.scss"
-import "./slider.animations.scss"
+import sliderStyles from "./styles.module.scss"
 
 const content = [
   {
@@ -37,16 +36,15 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
 
-      <Slider className={headerStyles.swrapper} autoplay={3000}>
+      <Slider classNames={sliderStyles} autoplay={5000}>
         {content.map((item, index) => (
           <div
             key={index}
-            className={headerStyles.scontent}
             style={{
               background: `url('${item.image}') no-repeat center center`,
             }}
           >
-            <div className={headerStyles.inner}>
+            <div className="center">
               <h1>{item.title}</h1>
               <p>{item.description}</p>
               <button>{item.button}</button>
