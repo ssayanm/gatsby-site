@@ -41,7 +41,10 @@ const IndexPage = () => {
           <div
             key={index}
             style={{
-              background: `url('${item.image}') no-repeat center center`,
+              // backgroundImage: `url('${item.image}')`,
+              backgroundBlendMode: `overlay`,
+              backgroundImage: `url('${item.image}'),linear-gradient(180deg,#0c71c3 0%,#002a72 100%)`,
+              backgroundPosition: `center`,
             }}
           >
             <div className="center">
