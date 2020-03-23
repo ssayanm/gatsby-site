@@ -57,7 +57,9 @@ const IndexPage = () => {
       </Slider>
 
       <h1>Hello !</h1>
-      <h2>I am Sayan, I am enjoying learning Gatsby with React !! </h2>
+      <h2>
+        I am Sayan, I am currently enjoying learning Gatsby with React !!{" "}
+      </h2>
       <p>
         Need a developer? <Link to="/contact">Contact Me</Link>
       </p>
