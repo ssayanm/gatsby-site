@@ -16,26 +16,26 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.20.9",
-    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby": "^2.20.20",
+    "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-remark-images": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-contentful": "^2.2.5",
+    "gatsby-source-contentful": "^2.2.7",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-animated-slider": "^2.0.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-images": "^1.1.0",
+    "react-helmet": "^6.0.0",
+    "react-images": "^1.1.2",
     "react-photo-gallery": "^8.0.0",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.4"
   },
   "repository": {
     "type": "git",
