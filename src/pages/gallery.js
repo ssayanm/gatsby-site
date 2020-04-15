@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
-import { photos } from "./photos"
+import photos from "./photos"
 
 const GalleryPage = () => {
   const [currentImage, setCurrentImage] = useState(0)
@@ -28,7 +28,7 @@ const GalleryPage = () => {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={photos.map((x) => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,
