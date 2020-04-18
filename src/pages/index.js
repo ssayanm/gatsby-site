@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
-import sliderStyles from "./styles.module.scss"
+import "./slider.modules.scss"
 
 const content = [
   {
@@ -36,7 +36,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
 
-      <Slider classNames={sliderStyles} autoplay={5000}>
+      <Slider classNames="sliderStyles" autoplay={5000}>
         {content.map((item, index) => (
           <div
             key={index}

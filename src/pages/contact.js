@@ -31,17 +31,17 @@ const ContactPage = () => {
 
         <label>
           <input type="text" name="name" placeholder="" required />
-          <div class="label-text">Your Name</div>
+          <div className="label-text">Your Name</div>
         </label>
 
         <label>
           <input type="email" name="email" placeholder="" required />
-          <div class="label-text">Your Email</div>
+          <div className="label-text">Your Email</div>
         </label>
 
         <label>
           <textarea name="message" placeholder="" required></textarea>
-          <div class="label-text">Your Message</div>
+          <div className="label-text">Your Message</div>
         </label>
 
         <button type="submit">Send</button>
