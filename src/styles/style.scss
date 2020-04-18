@@ -1,0 +1,26 @@
+@import "config";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: $light-color;
+}
+
+a {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}

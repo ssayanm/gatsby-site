@@ -5,13 +5,12 @@ import "./layout.modules.scss"
 
 const Layout = (props) => {
   return (
-    <div className="container">
-      <div className="content">
+    <div className="showcase">
+      <div className="container">
         <Header />
         {props.children}
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   )
 }

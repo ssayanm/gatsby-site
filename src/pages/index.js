@@ -5,6 +5,7 @@ import Head from "../components/head"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
 import "./slider.modules.scss"
+import "../styles/style.scss"
 
 const content = [
   {
@@ -56,13 +57,15 @@ const IndexPage = () => {
         ))}
       </Slider>
 
-      <h1>Hello !</h1>
-      <h2>
-        I am Sayan, I am currently enjoying learning Gatsby with React !!{" "}
-      </h2>
-      <p>
-        Need a developer? <Link to="/contact">Contact Me</Link>
-      </p>
+      <div className="showcase-content">
+        <h2>
+          Hello !! I am Sayan, I am currently enjoying learning Gatsby with
+          React !!{" "}
+        </h2>
+        <p className="my-1">
+          Need a developer? <Link to="/contact">Contact Me</Link>
+        </p>
+      </div>
     </Layout>
   )
 }
