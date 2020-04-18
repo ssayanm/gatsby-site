@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
+import "./contact.modules.scss"
 
 const ContactPage = () => {
   return (
@@ -27,25 +28,23 @@ const ContactPage = () => {
         action="about"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
 
-        <p>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+        <label>
+          <input type="text" name="name" placeholder="" required />
+          <div class="label-text">Your Name</div>
+        </label>
+
+        <label>
+          <input type="email" name="email" placeholder="" required />
+          <div class="label-text">Your Email</div>
+        </label>
+
+        <label>
+          <textarea name="message" placeholder="" required></textarea>
+          <div class="label-text">Your Message</div>
+        </label>
+
+        <button type="submit">Send</button>
       </form>
     </Layout>
   )
