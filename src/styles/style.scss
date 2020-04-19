@@ -1,5 +1,4 @@
 @import "config";
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
@@ -24,3 +23,7 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
+@import "layout.scss";
+@import "slider.scss";
+@import "faq.scss";

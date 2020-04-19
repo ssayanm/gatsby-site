@@ -1,0 +1,186 @@
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.center {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//margin & padding classes
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+button {
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 27px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: red;
+    color: lightcoral;
+    outline: 0;
+  }
+}
+
+//header
+
+.header {
+  padding: 1rem 0 2rem;
+}
+
+.title {
+  color: #444;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+//navMenu
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navItem {
+  color: #999999;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navItem:hover {
+  color: #666666;
+}
+
+.activeNavItem {
+  color: #0ea1f3;
+}
+
+//footer
+
+.footer {
+  margin-top: 3em;
+}
+
+//contact
+form {
+  text-align: left;
+
+  label {
+    display: block;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    text-align: left;
+
+    .label-text {
+      color: gray;
+      cursor: text;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      transform: (translateY(-34px));
+      transition: all 0.3s;
+      outline: 0;
+      border: none;
+    }
+
+    textarea {
+      height: 20vh;
+    }
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #4a4a4a;
+      color: lightblue;
+      font-size: 36px;
+      letter-spacing: -1px;
+      outline: 0;
+      padding: 5px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      width: 250px;
+
+      &:focus {
+        max-width: 100%;
+        width: 400px;
+
+        & + .label-text {
+          color: #101010;
+          font-size: 13px;
+          transform: (translateY(-74px));
+        }
+      }
+      &:not(:placeholder-shown) + .label-text {
+        font-size: 13px;
+        transform: (translateY(-74px));
+      }
+    }
+  }
+}
+
+//blog
+.posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.post {
+  margin: 1rem 0;
+
+  a {
+    background: #f4f4f4;
+    color: #000000;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #e4e4e4;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #777777;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}

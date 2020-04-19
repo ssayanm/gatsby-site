@@ -3,8 +3,6 @@ import Layout from "../components/layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Head from "../components/head"
 
-import "./blog.modules.scss"
-
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {

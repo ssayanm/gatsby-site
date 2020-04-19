@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
-import "./slider.modules.scss"
+
 import "../styles/style.scss"
 
 const content = [

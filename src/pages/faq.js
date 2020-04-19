@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
 import FAQ from "../components/faq"
-import "./faq.modules.scss"
 
 function FaqPage() {
   const [faqs, setfaqs] = useState([
