@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Head from "../components/head"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
@@ -21,6 +20,13 @@ export const query = graphql`
           html
         }
       }
+      media {
+        file {
+          url
+          contentType
+        }
+        id
+      }
     }
   }
 `
@@ -40,6 +46,23 @@ const Blog = ({ data }) => {
           __html: blogpost.body.childMarkdownRemark.html,
         }}
       />
+
+      {blogpost.media.map((url) =>
+        url.file.contentType === "video/mp4" ? (
+          <video width="320" height="240" controls key={url.id}>
+            <source src={url.file.url} type="video/mp4" />
+            <track default kind="captions" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img
+            src={url.file.url}
+            width="500"
+            alt={blogpost.title}
+            key={url.id}
+          />
+        )
+      )}
     </Layout>
   )
 }
